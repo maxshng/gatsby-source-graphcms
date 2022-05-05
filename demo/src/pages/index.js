@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const IndexPage = ({ data: { products } }) => {
   return (
+    <main>
     <h1> Max Trial </h1>
     <ul className="gap-6 grid grid-cols-1 max-w-6xl md:grid-cols-3 mx-auto">
       {products.nodes.map((product) => {
@@ -28,6 +29,7 @@ const IndexPage = ({ data: { products } }) => {
         )
       })}
     </ul>
+    </main>
   )
 }
 

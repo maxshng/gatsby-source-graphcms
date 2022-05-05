@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 const IndexPage = ({ data: { products } }) => {
   return (
+    <div>
     <title>My Page</title>
     <main>
     <ul className="gap-6 grid grid-cols-1 max-w-6xl md:grid-cols-3 mx-auto">
@@ -33,6 +34,7 @@ const IndexPage = ({ data: { products } }) => {
       })}
     </ul>
     </main>
+    </div>
   )
 }
 

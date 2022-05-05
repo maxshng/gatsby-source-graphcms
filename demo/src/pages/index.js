@@ -2,8 +2,10 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-const IndexPage = ({ data: { products } }) => {
+const IndexPage = ({ pageTitle, data: { products } }) => {
   return (
+    <title>My Page</title>
+    <main>
     <ul className="gap-6 grid grid-cols-1 max-w-6xl md:grid-cols-3 mx-auto">
       {products.nodes.map((product) => {
         const [mainImage] = product.images
@@ -21,13 +23,16 @@ const IndexPage = ({ data: { products } }) => {
                 <p className="font-semibold text-purple-600">
                   {product.formattedPrice}
                 </p>
-                <h3>{product.id}</h3>
+                <p> --- </p> <br>
+                <p className="font-small"> {product.id} </p> <br>
+                <p> --- </p>
               </div>
             </Link>
           </li>
         )
       })}
     </ul>
+    </main>
   )
 }
 

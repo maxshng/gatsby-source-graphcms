@@ -7,7 +7,7 @@ const IndexPage = ({ data: { products } }) => {
     <div>
     <title>My Page</title>
     <main>
-    <h1 className="font-large">My Page</h1>
+    <h1 className="my-3 text-xl font-large">My Page</h1>
     <ul className="gap-6 grid grid-cols-1 max-w-6xl md:grid-cols-3 mx-auto">
       {products.nodes.map((product) => {
         const [mainImage] = product.images

@@ -21,6 +21,7 @@ const IndexPage = ({ data: { products } }) => {
                 <p className="font-semibold text-purple-600">
                   {product.formattedPrice}
                 </p>
+                <h2> ---- </h2>
               </div>
             </Link>
           </li>

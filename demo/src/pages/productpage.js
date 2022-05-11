@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import MainLayout from '../components/mainlayout'
 
-const ProductPage = ({ data: { products } }) => {
+const MyProductPage = ({ data: { products } }) => {
   return (
     <MainLayout pageTitle="Product">
     <ul className="gap-6 grid grid-cols-1 max-w-6xl md:grid-cols-3 mx-auto">
@@ -53,4 +53,4 @@ export const query = graphql`
   }
 `
 
-export default ProductPage
+export default MyProductPage

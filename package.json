@@ -32,5 +32,12 @@
   },
   "devDependencies": {
     "prettier": "2.5.1"
+  },
+  "dependencies": {
+    "gatsby-plugin-image": "^2.14.0",
+    "gatsby-plugin-mdx": "^3.14.0",
+    "gatsby-plugin-postcss": "^5.14.0",
+    "gatsby-plugin-sharp": "^4.14.0",
+    "gatsby-source-graphcms": "^2.8.0"
   }
 }
